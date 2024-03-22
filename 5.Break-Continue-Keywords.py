@@ -1,4 +1,4 @@
-print("Break")
+############### BREAK
 toplam = 0
 
 while (True):
@@ -10,7 +10,7 @@ while (True):
 
 print ("toplam: ",toplam)
 
-print("Continue")
+############### CONTINUE
 
 sayac = 0
 while (sayac <= 10):
@@ -18,4 +18,15 @@ while (sayac <= 10):
     if sayac % 2 != 0:
         continue
     print (sayac)
+    
+############### ÖRNEK
+
+sayi = int(input("Asalligi kontrol edilecek sayiyi giriniz: "))
+
+for i in range(2, sayi):
+    if (sayi % i == 0):
+        print (sayi, "sayisi asal degildir.")
+        break
+else:
+    print (sayi, "sayisi asaldir.")
     
