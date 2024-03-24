@@ -1,2 +1,2 @@
 # Python-Notes
- All my python notes
+ All of my Python notes
