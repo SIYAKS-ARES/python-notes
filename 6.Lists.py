@@ -8,7 +8,7 @@ print ("-3:",isimler[-3])
 
 print (isimler[:2]) # Başına ":" getirilince en baştan başla o sayıya kadar git demek.
 print (isimler[2:]) # Sonuna ":" getirilince sayıdan başla o sona kadar git demek.
-print (isimler[::-1]) # Baştan başla, sona kadar git ve tersten git
+print (isimler[::-1]) # Baştan başla, sona kadar git ve tersten git demek.
 
 print(len(isimler)) #Listemizin kaç elemanlı olduğunu gösterir.
 
