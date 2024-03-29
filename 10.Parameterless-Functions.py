@@ -6,3 +6,4 @@ def isimYaz(): # def anahtar kelimesi ile fonksiyonlar yazılabilir.
 isimYaz()
 # Parantezi açıp kapatmak önemli bu bir fonksiyon olduğunu gösterir.
 # Fonksiyon yazıldıktan sonra çağırılabilir.
+# Parametresiz fonskiyonlar parantez içine parametre almayan fonskiyonları ifade eder.
