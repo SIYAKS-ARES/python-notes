@@ -46,3 +46,19 @@ def kdvHesapla(kdv,fiyat):
     print ("Urunun satis fiyati: ",satisFiyati)
     
 kdvHesapla(18,100)
+
+'''
+def reverse_numbers(numbers):
+    return numbers[::-1]
+
+try:
+    num_count = int(input("Enter the number of integers: "))
+    num_list = []
+    for i in range(num_count):
+        num = int(input(f"Enter integer {i + 1}: "))
+        num_list.append(num)
+    reversed_list = reverse_numbers(num_list)
+    print("Reversed list of integers:", reversed_list)
+except ValueError:
+    print("Invalid input. Please enter valid integers.")
+'''
