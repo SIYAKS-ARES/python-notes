@@ -47,7 +47,6 @@ def kdvHesapla(kdv,fiyat):
     
 kdvHesapla(18,100)
 
-'''
 def reverse_numbers(numbers):
     return numbers[::-1]
 
@@ -61,4 +60,3 @@ try:
     print("Reversed list of integers:", reversed_list)
 except ValueError:
     print("Invalid input. Please enter valid integers.")
-'''
