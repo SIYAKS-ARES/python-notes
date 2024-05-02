@@ -1,4 +1,4 @@
-'''how can ı add new letters to a string using python
+'''how can I add new letters to a string using python
 
 ChatGPT
 To add new letters to a string in Python, you can simply concatenate
