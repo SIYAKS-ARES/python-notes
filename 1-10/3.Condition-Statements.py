@@ -9,7 +9,7 @@ elif(sayi > 0):
     print("Sayi sifirdan buyuktur")
 else:
     print ("Sayi 0'a esit degildir.")
-    
+
 ###############Condition Statement Examples
 
 #İlk örnek doğum tarihine göre ehliyet alıp alamayacağını gösteren yapı
@@ -21,7 +21,7 @@ if(yas >= 18):
     print(yas, "Oldugu ve 18 yasindan buyuk oldugunuz icin ehliyet alabilirsiniz!")
 else:
     print(yas, "Oldugu ve 18 yasindan kucuk oldugunuz icin ehliyet alamazsiniz!")
-    
+
 #İkinci örnek sisteme giriş yapma yapısı
 
 #kullaniciAdi = "SIYAKSARES" #Tırnak işareti unutulmamalıdır.
@@ -35,7 +35,7 @@ if(kullaniciAdi == "SIYAKSARES" and kullaniciSifresi=="1234"):
     print("Girilen bilgiler dogru, giris yapiliyor!")
 else:
     print("Girilen bilgiler hatali, cikis yapiliyor!")
-    
+
 ###############Kısa Yazılan Koşul İfadeleri
 import math
 
