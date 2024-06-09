@@ -4,6 +4,9 @@
 
 # Verilen iki listenin de tüm elemanlarını gezerek bir tuple oluşturur.
 
+from sympy import reduced
+
+
 xZip = [1,2,3,4,5,6,7,8,9]
 yZip = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 
@@ -84,24 +87,25 @@ print(hataliSifreler)
 
 #############################################################
 
+from functools import reduce
+
 # REDUCE FUNCTION
 
 '''REDUCE fonksiyonu bir tane fonksiyon ve iterable edilebilen veri kümesi alır ardından sadece tek bir sonuç verir.
 Bunu elemanları eksilterek, kendinde toplayarak yapar.
 '''
 
-list = [12,46,54,62,7634,8324,966,810]
+lst = [12, 46, 54, 62, 7634, 8324, 966, 810]
 
-def topla(sayi1, sayi2):
+def topla2(sayi1, sayi2):
     return sayi1 + sayi2
 
-print(reduce(topla, list))
+print(reduce(topla2, lst))
 # sayi1 ile sayi2'yi toplar ardından sonucu sayi1'e atar ve sıradaki sayıyı sayi2'ye atayarak devam eder. Ve son sonucu verir.
 
-print(reduce(lambda n,m: n + m, [12,46,54,62,7634,8324,966,810])) # Lamda kullanılarak yapılan hali.
+print(reduce(lambda n, m: n + m, [12, 46, 54, 62, 7634, 8324, 966, 810])) # Lamda kullanılarak yapılan hali.
 
 #############################################################
-
 
 # REDUCE FUNCTION
 
@@ -109,30 +113,15 @@ print(reduce(lambda n,m: n + m, [12,46,54,62,7634,8324,966,810])) # Lamda kullan
 bir sonraki elemanla toplayarak bir sonuç elde eder.
 '''
 
-from functools import reduce
-
 xReduce = [1, 2, 4, 8, 12, 7, 5]
-
-
-def topla(sayi1, sayi2):
-    return sayi1 + sayi2
 
 def carp(sayi1, sayi2):
     return sayi1 * sayi2
 
-def ciftMi(sayi):
-    return True if  sayi % 2 == 0 else False
-
-def kareAl(sayi):
-    return sayi ** 2
-
-# reduce fonksiyonu, verilen iterable edilebilen veri kümesinin elemanlarını birbirinden bir sonraki elemanla toplayarak bir sonuç elde eder.
-
-
-print(reduce(topla, xReduce))
+print(reduce(topla2, xReduce))
 print(reduce(carp, xReduce))
-print(reduce(ciftMi, xReduce))
-print(reduce(kareAl, xReduce))
+# `reduce` is not suitable for `ciftMi2` and `kareAl2` since they do not combine two values.
+# Hence, providing alternative meaningful `reduce` examples.
 
 #############################################################
 
@@ -146,14 +135,14 @@ sonucunu döndürür.
 xAll = [1, 2, 4, 8, 12, 7, 5]
 yAll = [3, 6, 9, 12, 15, 18, 21]
 
-def ciftMi(sayi):
+def ciftMi3(sayi):
     return True if  sayi % 2 == 0 else False
 
-def kareAl(sayi):
+def kareAl3(sayi):
     return sayi ** 2
 
-print(all(map(ciftMi, xAll)))
-print(all(map(kareAl, xAll)))
+print(all(map(ciftMi3, xAll)))
+print(all(map(kareAl3, xAll)))
 
 #############################################################
 
@@ -167,14 +156,14 @@ sonucunu döndürür.
 xAny = [1, 2, 4, 8, 12, 7, 5]
 yAny = [3, 6, 9, 12, 15, 18, 21]
 
-def ciftMi(sayi):
+def ciftMi4(sayi):
     return True if  sayi % 2 == 0 else False
 
-def kareAl(sayi):
+def kareAl4(sayi):
     return sayi ** 2
 
-print(any(map(ciftMi, xAny)))
-print(any(map(kareAl, xAny)))
+print(any(map(ciftMi4, xAny)))
+print(any(map(kareAl4, xAny)))
 
 #############################################################
 
@@ -187,14 +176,14 @@ print(any(map(kareAl, xAny)))
 xSum = [1, 2, 4, 8, 12, 7, 5]
 ySum = [3, 6, 9, 12, 15, 18, 21]
 
-def ciftMi(sayi):
+def ciftMi5(sayi):
     return True if  sayi % 2 == 0 else False
 
-def kareAl(sayi):
+def kareAl5(sayi):
     return sayi ** 2
 
-print(sum(map(ciftMi, xSum)))
-print(sum(map(kareAl, xSum)))
+print(sum(map(ciftMi5, xSum)))
+print(sum(map(kareAl5, xSum)))
 
 #############################################################
 
@@ -207,14 +196,14 @@ print(sum(map(kareAl, xSum)))
 xMin = [1, 2, 4, 8, 12, 7, 5]
 yMin = [3, 6, 9, 12, 15, 18, 21]
 
-def ciftMi(sayi):
+def ciftMi6(sayi):
     return True if  sayi % 2 == 0 else False
 
-def kareAl(sayi):
+def kareAl6(sayi):
     return sayi ** 2
 
-print(min(map(ciftMi, xMin)))
-print(min(map(kareAl, xMin)))
+print(min(map(ciftMi6, xMin)))
+print(min(map(kareAl6, xMin)))
 
 #############################################################
 
@@ -227,13 +216,13 @@ print(min(map(kareAl, xMin)))
 xMax = [1, 2, 4, 8, 12, 7, 5]
 yMax = [3, 6, 9, 12, 15, 18, 21]
 
-def ciftMi(sayi):
+def ciftMi7(sayi):
     return True if  sayi % 2 == 0 else False
 
-def kareAl(sayi):
+def kareAl7(sayi):
     return sayi ** 2
 
-print(max(map(ciftMi, xMax)))
-print(max(map(kareAl, xMax)))
+print(max(map(ciftMi7, xMax)))
+print(max(map(kareAl7, xMax)))
 
 #############################################################
