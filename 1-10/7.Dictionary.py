@@ -1,4 +1,4 @@
-# Web'ten veri çekerken kullanılır aynı zamanda JSON veri tipinin buna çok uyumlu olmasından dolayı sık sık kullanılır.
+# Web'ten veri çekerken, aynı zamanda JSON veri tipi ile bu veri tipi çok uyumlu olmasından dolayı da sık sık kullanılır.
 sozluk = {"Book": "Kitap", "Dictionary":"Sözlük", "Collection": "Koleksiyon"}
 # Sözlüklerde her bir eleman iki tane veri tutuar, key ve value. Key değerler kullanılarak value değerlerine ulaşılır.
 print (sozluk["Collection"]) #Indis'lere ulaşmak için her zaman köşeli parantez kullanılır.
@@ -16,4 +16,3 @@ print (insan.values())
 
 for k, v in insan.items(): # ".items()" fonksiyonu kullanılmak zorundadır.
     print ("Kişinin {} keyinin değeri: {}".format(k, v))
-
