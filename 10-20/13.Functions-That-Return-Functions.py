@@ -24,3 +24,15 @@ arac_tipi = input("Lütfen araç tipini giriniz (Motorsiklet/Araba/Kamyonet): ")
 saat = int(input("Lütfen park etmek istediğiniz saati giriniz: "))
 ucret_hesapla = parkEt(arac_tipi)
 print("Toplam ücret:", ucret_hesapla(saat))
+
+############ Second Example
+
+def isimVeYas(isim, yas):
+    if yas < 0:
+        raise ValueError("Yaş sıfırdan küçük olamaz")
+    return f"İsim: {isim}, Yaş: {yas}"
+def kisiOlustur(isim):
+    def kisi(yas):
+        return isimVeYas(isim, yas)
+    return kisi
+kisi = kisiOlustur("Ahmet")
