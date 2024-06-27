@@ -13,14 +13,13 @@ print(next(iterlist))
 print("")
 print("")
 
-
 '''
 Bunlar döngüler vs. yardımıyla da gerçekleştirilebilirlerdi lakin, liste boyutu(10M,15M...) çok büyükse bu yaklaşım çok uzun sürebilir, ayrıca
 bu yaklaşımda döngüye sokulduğu objenin boyutu kadar döngüye girmesi gerekir, yani bu listenin hepsini işlemek, programın tüm elemanlara
 ihtiyacı olmamasına rağmen bellekte tutmak bellek israfına sepeb olur. Örnekteki "next" ifadesi sadece çağırılınca veri alır.'''
 
-'''
-iki dezavantajı bulunur, ilki önceki elemana dönememesi ve son eleman için tüm elemanları gezmesinin gerekmesi.'''
+
+# iki dezavantajı bulunur, ilki önceki elemana dönememesi ve son eleman için tüm elemanları gezmesinin gerekmesi.
 
 text = "Hello World"
 
@@ -45,7 +44,8 @@ print("")
 
 # İterasyon Sınıfları
 
-'''Sınıflar, metodları gruplayan aaraçlardır, belirli işlemleri yapan metodları aynı sınıfta topluyoruz.
+'''
+Sınıflar, metodları gruplayan aaraçlardır, belirli işlemleri yapan metodları aynı sınıfta topluyoruz.
 Sınıfların içerisindeki metodların çağırılması, sınıfın içerisindeki metodların çağırılmasıdır.
 '''
 
@@ -166,15 +166,16 @@ x3 = [0, 1]
 
 y = [x2.append(x2[i-1] + x2[i]) for i in range(1, 10)]
 
-'''# Generate Fibonacci sequence
+'''
+# Generate Fibonacci sequence
 fib = (x3.append(x3[-1] + x3[-2]) or x3[-1] for _ in range(10))
 
 # Filter even Fibonacci numbers
-even_fib = filter(lambda x: x % 2 == 0, fib)'''
+even_fib = filter(lambda x: x % 2 == 0, fib)
+'''
 
 even_fib = [0] + [x3[-1] for _ in range(2, 10) if not x3.append(x3[-1] + x3[-2]) and x3[-1] % 2 == 0]
 
 print(x2)
 print(x3)
 print(even_fib)
-
