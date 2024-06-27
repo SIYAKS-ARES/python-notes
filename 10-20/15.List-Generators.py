@@ -37,8 +37,3 @@ print(filitreli_liste2)
 print(filitreli_liste3)
 print(matrix_final)
 print(myList)
-
-
-
-
-
