@@ -3,9 +3,10 @@ def topla(x, y): # Parametrelere varsayılan değerler (x=0,y=0) şeklinde veril
 
 print(topla(10,5)) # Parametrelerin yerini değiştirmek için (y=10,x=15) şeklinde yazılabilir.
 
-'''Bu şekilde fonksiyona verilecek parametrelerin sayısı belli değilken hata almanın önüne geçilebilir.
-"*args" içerisinde bir tuple listesi tutar. Gelen verileri bir tuple listesi olarak tutar. Kullanıcı bu şekilde istediği kadar parametre
-girebilir'''
+'''Bu şekilde fonksiyona verilecek parametrelerin sayısı belli değilken hata almanın önüne geçilebilir. "*args" içerisinde bir
+tuple listesi tutar. Gelen verileri bir tuple listesi olarak tutar. Kullanıcı bu şekilde istediği kadar parametre girebilir
+'''
+
 def yuzdeAl(yuzdeOranı, *args): # "args" arguments'in kısaltmasıdır. Bu tek yıldızlı örneğidir.
     yuzdesiAlinanSayilar = list()
     for i in args:
