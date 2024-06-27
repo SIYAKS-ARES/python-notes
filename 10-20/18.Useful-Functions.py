@@ -6,13 +6,11 @@
 
 from sympy import reduced
 
-
 xZip = [1,2,3,4,5,6,7,8,9]
 yZip = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 
 z = list(zip(xZip, yZip)) # Eğer girilen listelerin uzunlukları eşit olmazsa karşılığı olmayan elemanı göstermez.
 t = dict(zip(xZip, yZip)) # Dönüştürmede çoğunlukla liste olarak değil, key ve value bileşenlerine sahip olan dictionary kullanılır.
-
 
 print(z)
 print(t)
@@ -21,7 +19,8 @@ print(t)
 
 # MAP FUNCTIONS
 
-'''Fonksiyonel proglamanın önemli fonksiyonlarından biri olan MAP fonksiyonu,
+'''
+Fonksiyonel proglamanın önemli fonksiyonlarından biri olan MAP fonksiyonu,
 önceden çoklu verileri depolamak için (listeler, setler, kümeler) kullanmıştık, şimdi ise fonksiyonlar ile harmanlanarak kullanılacak.
 MAP fonksiyonu, verilen nesneyi verilen fonksiyona uygular ve sonucu bir map objesi olarak döndürür.
 '''
@@ -62,9 +61,7 @@ print(newList3)
 
 # FILTER FUNCTION
 
-'''FILTER fonksiyonu, verilen true-false döndüren bir fonksiyonun ve iterable edilebilen koşulu
-sağlayan elemanları yeni bir veri setine kaydeder.
-'''
+# FILTER fonksiyonu, verilen true-false döndüren bir fonksiyonun ve iterable edilebilen koşulu sağlayan elemanları yeni bir veri setine kaydeder.
 
 '''
 FILTER fonksiyonu, verilen true-false döndüren bir fonksiyonun ve iterable edilebilen veri kümesinin koşulu
@@ -109,9 +106,7 @@ print(reduce(lambda n, m: n + m, [12, 46, 54, 62, 7634, 8324, 966, 810])) # Lamd
 
 # REDUCE FUNCTION
 
-'''REDUCE fonksiyonu, verilen iterable edilebilen veri kümesinin elemanlarını birbirinden
-bir sonraki elemanla toplayarak bir sonuç elde eder.
-'''
+# REDUCE fonksiyonu, verilen iterable edilebilen veri kümesinin elemanlarını birbirinden bir sonraki elemanla toplayarak bir sonuç elde eder.
 
 xReduce = [1, 2, 4, 8, 12, 7, 5]
 
@@ -124,7 +119,6 @@ print(reduce(carp, xReduce))
 # Hence, providing alternative meaningful `reduce` examples.
 
 #############################################################
-
 
 # ALL FUNCTION
 
@@ -146,12 +140,9 @@ print(all(map(kareAl3, xAll)))
 
 #############################################################
 
-
 # ANY FUNCTION
 
-'''ANY fonksiyonu, verilen iterable edilebilen veri kümesinin herhangi bir elemanına true döndüren bir fonksiyonun
-sonucunu döndürür.
-'''
+# ANY fonksiyonu, verilen iterable edilebilen veri kümesinin herhangi bir elemanına true döndüren bir fonksiyonun sonucunu döndürür.
 
 xAny = [1, 2, 4, 8, 12, 7, 5]
 yAny = [3, 6, 9, 12, 15, 18, 21]
@@ -167,11 +158,9 @@ print(any(map(kareAl4, xAny)))
 
 #############################################################
 
-
 # SUM FUNCTION
 
-'''SUM fonksiyonu, verilen iterable edilebilen veri kümesinin elemanlarının toplamını döndürür.
-'''
+# SUM fonksiyonu, verilen iterable edilebilen veri kümesinin elemanlarının toplamını döndürür.
 
 xSum = [1, 2, 4, 8, 12, 7, 5]
 ySum = [3, 6, 9, 12, 15, 18, 21]
@@ -187,11 +176,9 @@ print(sum(map(kareAl5, xSum)))
 
 #############################################################
 
-
 # MIN FUNCTION
 
-'''MIN fonksiyonu, verilen iterable edilebilen veri kümesinin en küçük elemanını döndürür.
-'''
+# MIN fonksiyonu, verilen iterable edilebilen veri kümesinin en küçük elemanını döndürür.
 
 xMin = [1, 2, 4, 8, 12, 7, 5]
 yMin = [3, 6, 9, 12, 15, 18, 21]
@@ -207,11 +194,9 @@ print(min(map(kareAl6, xMin)))
 
 #############################################################
 
-
 # MAX FUNCTION
 
-'''MAX fonksiyonu, verilen iterable edilebilen veri kümesinin en büyük elemanını döndürür.
-'''
+# MAX fonksiyonu, verilen iterable edilebilen veri kümesinin en büyük elemanını döndürür.
 
 xMax = [1, 2, 4, 8, 12, 7, 5]
 yMax = [3, 6, 9, 12, 15, 18, 21]
