@@ -1,5 +1,7 @@
-'''Bir fonksiyon içerisinde birden fazla ve farklı işlemleri gruplamak ihtiyacı doğduğunda, daha temiz kod yazmak istendiğinde
-işe yarayan bir yöntemdir.'''
+'''
+Bir fonksiyon içerisinde birden fazla ve farklı işlemleri gruplamak ihtiyacı doğduğunda,
+daha temiz kod yazmak istendiğinde işe yarayan bir yöntemdir.
+'''
 
 def yasalKisitlar(yas):
     def ehliyetAlabilme(y):
