@@ -16,7 +16,6 @@ print("@ ile olan düzenlemeden sonra...")
 
 function()
 
-
 # Decorator Example
 
 import time
