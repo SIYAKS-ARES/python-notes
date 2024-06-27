@@ -4,9 +4,9 @@
 def isimYazdir(ad, soyad):
     print ("İsim: {} \nSoyisim: {}".format(ad, soyad))
 
-isimYazdir("Samet","Yasit") # Fonskiyon çağırıldıktan sonra çift nokta almaz.
+isimYazdir("Samet","Hüseyinoğlu") # Fonskiyon çağırıldıktan sonra çift nokta almaz.
 
-# "def" , "definition" un kısaltmasıdır.
+# "def", "definition" un kısaltmasıdır.
 
 def karesiniAl(x):
     print ("Girmiş olduğunuz" , x,"sayısının karesi:",x*x)
