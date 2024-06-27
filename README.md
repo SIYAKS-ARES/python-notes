@@ -6,7 +6,7 @@ Welcome to the **Python-Notes** repository! This repository contains a comprehen
 
 Python is a high-level, interpreted, and general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and simplicity. Its syntax allows programmers to express concepts in fewer lines of code compared to other languages, making it a favorite among beginners and experts alike.
 
-### Key Features of Python:
+### Key Features of Python
 
 - **Easy to Learn and Use**: Python’s straightforward syntax and readability make it an ideal language for beginners.
 - **Versatile**: Python can be used for web development, data analysis, artificial intelligence, scientific computing, and more.
@@ -63,7 +63,7 @@ pip install requests
 
 This repository includes various notes on different aspects of Python programming. These notes cover topics such as syntax, best practices, common pitfalls, and advanced features. Use these notes as a reference to deepen your understanding of Python and improve your coding skills.
 
-### Example Topics:
+### Example Topics
 
 - **Basic Syntax and Data Types**: Understanding variables, data types, and basic operations.
 - **Control Structures**: Using loops and conditionals effectively.
