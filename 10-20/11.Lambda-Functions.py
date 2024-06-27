@@ -1,6 +1,8 @@
-'''Normal fonksiyonların tek satırda yazılmasıdır. Parametre olarak fonksiyon alan fonksiyonlara fonksiyon göndermek için 
+'''
+Normal fonksiyonların tek satırda yazılmasıdır. Parametre olarak fonksiyon alan fonksiyonlara fonksiyon göndermek için
 kullanılan fonksiyonlara denir. Genellikle kodun daha okunabilir olması için kullanılır. Tek yerde kullanılacak olan
-fonksiyonlarda tercih edilir. Genel olarak isim verilmez.'''
+fonksiyonlarda tercih edilir. Genel olarak isim verilmez.
+'''
 
 karesiniAl = lambda x: x*x
 
@@ -13,6 +15,3 @@ print(carp(carp(3, 4), karesiniAl(4))) # Çağırılan fonksiyonları iki pareme
 print((lambda x, y: x/y)(2,4)) # İsim vermeden tek satırda bu şekilde kullanılır.
 
 print((lambda x: x%10==0)(30)) # Boolean değerler de döndürebiliyor.
-
-
-
