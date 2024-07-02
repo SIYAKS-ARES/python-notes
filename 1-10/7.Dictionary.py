@@ -4,9 +4,9 @@ sozluk = {"Book": "Kitap", "Dictionary":"Sözlük", "Collection": "Koleksiyon"}
 print (sozluk["Collection"]) #Indis'lere ulaşmak için her zaman köşeli parantez kullanılır.
 
 insan = {
-    "İsim": "Özgür",
-    "Soyisim" : "Akça",
-    "Yaş" : 21,
+    "İsim": "Sadık",
+    "Soyisim" : "Bilen",
+    "Yaş" : 25,
     "Meslekler" : ["Bilgisayar mühendisliği", "Proje Yöneticiliği"]
 }
 print (insan["Yaş"])
@@ -15,4 +15,5 @@ print (insan.keys())
 print (insan.values())
 
 for k, v in insan.items(): # ".items()" fonksiyonu kullanılmak zorundadır.
-    print ("Kişinin {} keyinin değeri: {}".format(k, v))
+    print(f"Kişinin {k} keyinin değeri: {v}")
+    #print ("Kişinin {} keyinin değeri: {}".format(k, v))s
