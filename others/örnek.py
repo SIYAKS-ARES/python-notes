@@ -4,7 +4,6 @@ fonksiyonu yazınız.'''
 
 
 # Kullanıcıdan girdi alırken listenin doğru formatta alınması için aşağıdaki kodu kullanabiliriz.
-# Kullanıcıdan girdi alırken listenin doğru formatta alınması için aşağıdaki kodu kullanabiliriz.
 
 
 liste1 = list(map(int, input("Lütfen bir n elemanlı liste giriniz (elemanları boşluk ile ayırın): ").split()))
